@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label>Sex:</label>
+            <div class="sex-group">
+                <label><input type="radio" name="sex" value="male" required> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+            </div>
+
+            <br><br>
+
+            <label for="country">Country:</label>
+            <br><br>
+            <select id="country" name="country">
+                <option value="">Select an option</option>
+                <option value="vn">Vietnam</option>
+                <option value="us">United States</option>
+                <option value="jp">Japan</option>
+            </select>
+            <br><br>
+            <label for="message">Message:</label>
+            <br><br>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label><input type="checkbox" name="subscribe"> Subscribe?</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
